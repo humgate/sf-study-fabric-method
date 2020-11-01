@@ -1,4 +1,4 @@
-# sf-study-fabric-method
+# sf-study-factory-method
 Test repository. Contains implementation of factory method pattern example. Additional test task to module 14 in scope 
 of SkillFactory Java Developer training course.
 
