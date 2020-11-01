@@ -1,6 +1,7 @@
 import com.humgate.factory.*;
 
-/** Specific factory class extending InsuranceContract base factory class. Creates an instance of specific
+/**
+ *  Specific factory class extending InsuranceContract base factory class. Creates an instance of specific
  * InsuranceCoverage subclass - PropertyInsurance
  */
 

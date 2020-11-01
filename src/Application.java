@@ -1,4 +1,5 @@
-/** Application class containing the main method. Creates three insurance contract factories and stores them to array
+/**
+ * Application class containing the main method. Creates three insurance contract factories and stores them to array
  * Then uses factory method for each element in the factory array to force each insurance coverage to "initialize"
  */
 
@@ -8,16 +9,17 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /* Create different insurance contracts for each client by calling specific factory constructors. Here the
-          only, place where we call specific subclass methods (constructors). Further we will call only their common
-          interface methods
+        /**
+         * Create different insurance contracts for each client by calling specific factory constructors. Here the
+         *  only, place where we call specific subclass methods (constructors). Further we will call only their common
+         * interface methods
          */
         insContractsDB[0] = new AutoInsuranceContract("Ivan");
         insContractsDB[1] = new PropertyInsuranceContract("Peter");
         insContractsDB[2] = new MedicalInsuranceContract( "Maria");
 
-        /*
-        * !!!!!!This is the purpose and the result of Factory method pattern usage!!!!!:
+        /**
+        * !! This is the purpose and the result of Factory method pattern usage !!:
         * All remaining code which works with Factory and specific products (coverages) will use only common
         * interfaces like registerInsuranceContract().
         * In future if need to create new insurance coverage types, for example
